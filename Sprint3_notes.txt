@@ -1,0 +1,49 @@
+Module1______________________________________________________
+Sprint3______________________________________________________
+Part1________________________________________________________
+
+plt.gca().fill_between(range(len(linear_data)),
+			linear_data, expo_data,
+			facecolor='blue',
+			alpha=0.25)   Fills plot between two lines
+					with chosen color.
+
+plt.figure(figsize=(8,6)) - sets figure size
+plt.yticks([]) - removes y axis ticks
+plt.style.use('classic') - sets the style of figures
+plt.draw() - force an update of the plot
+fig.savefig('figure.png') - saves plotted figure with chosen format
+fig.canvas.get_supported_filetypes() - gives list of file formats figure can be saved
+plt.xlim(),plt.ylim() - sets the limits of axis.
+plt.axis([]) - same, sets the limits of x,y axis.
+plt.axis('tight') - plot will fit in figure.
+plt.axis('equal') - gets equal aspect ratio for plot and figure.
+
+
+Matplotlib GOTCHAS:
+
+plt.xlabel() → ax.set_xlabel()
+
+plt.ylabel() → ax.set_ylabel()
+
+plt.xlim() → ax.set_xlim()
+
+plt.ylim() → ax.set_ylim()
+
+plt.title() → ax.set_title()
+
+OOP example when ax.set is used:
+
+ax = plt.axes()
+        ax.plot(x, np.sin(x))
+        ax.set(xlim=(0, 10), ylim=(-2, 2),
+               xlabel='x', ylabel='sin(x)',
+               title='A Simple Plot');
+
+Part2________________________________________________________
+
+Part3________________________________________________________
+
+Part4________________________________________________________
+
+Project________________________________________________________
