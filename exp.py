@@ -1,6 +1,17 @@
-given = ["-3", "-2", "-1", "0", "1", "2"]
-print(given)
-fixed = list(map(int, given))
-print(fixed)
-intime = len([num for num in fixed if num <= 0])
-print(intime)
+given = [7, 1, 3, 4, 1, 7]
+
+
+def func(inp):
+    results = []
+    for first in range(len(inp)):
+        for second in range(first + 1, len(inp)):
+            if inp[first] == inp[second]:
+                res = abs(first - second)
+                results.append(res)
+            else:
+                pass
+
+    return "-1" if not results else min(results)
+
+
+print(func(given))
