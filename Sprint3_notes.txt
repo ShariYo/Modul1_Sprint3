@@ -120,6 +120,13 @@ sns.jointplot - This command is useful for simultaneously displaying a 2D KDE pl
 
 Part3________________________________________________________
 
+plt.style.available - shows available styles for plt
+pd.tools.plotting.scatter_matrix(df) - shows many scatter plots
+sns.joinplot(v1, v2, alpha=0.4) - visualization between two plots
+sns.jointplot(v1, v2, kind='kde', space=0) - distribution of the data
+sns.pairplot(iris, hue='Name', diag_kind='kde') - to search for clusters
+
+
 Part4________________________________________________________
 
 Project________________________________________________________
